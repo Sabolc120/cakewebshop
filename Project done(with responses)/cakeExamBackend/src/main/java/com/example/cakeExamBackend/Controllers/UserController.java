@@ -17,8 +17,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostConstruct
+    /*@PostConstruct
     public void initRoleAndUser() {
         userService.initRolesAndUser();
-    }
+    }*/
 }
