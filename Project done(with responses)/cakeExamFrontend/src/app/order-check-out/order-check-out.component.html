@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Köszönjük szépen a vásárlást!</h1>
+    <h3>A torták hamarosan megérkeznek.</h3>
+    <div class="row">
+        <div class="col-sm-12">
+            <form id="cakeForm" *ngFor="let cakes of cakeBasketDetails" #orderForm="ngForm" (ngSubmit)="setStatus(orderForm)">
+                <section id="myBasket">
+                    <p class="basketCakeName">{{cakes.cakeName}}</p>
+                    <img  class="basketImg img-thumbnail" src="{{cakes.cakeImg}}">
+                    <p class="mainIngredients">Torta Fő hozzávalója: {{cakes.cakeMainIngredient}}</p>
+                    <p class="cakeQuantity">Torta mennyisége: {{cakes.cakeQuantity}}</p>
+                    <input type="hidden" class="form-control" ngModel="{{cakes.placedOrder}}"
+                    id = "placedOrder" name="placedOrder">
+                    <p class="cakePrice">{{cakes.cakePrice}} Forint</p>
+                </section>
+                <input type="hidden" #cakeName ngModel="{{cakes.cakeName}}" value="{{cakeToUpdate.cakeName}}" id="cakeName" name="cakeName">
+                <input type="hidden" #id [(ngModel)]="cakeToUpdate.identifier" value="{{cakeId}}" id="id" name="id">
+                <input type="hidden" #cakeImg [(ngModel)]="cakeToUpdate.cakeImg" value="{{cakes.cakeImg}}" id="cakeImg" name="cakeImg">
+                <input type="hidden" #cakePrice [(ngModel)]="cakeToUpdate.cakePrice" value="{{cakes.cakePrice}}" id="cakePrice" name="cakePrice">
+                <input type="hidden" #placedOrder [(ngModel)]="cakeToUpdate.placedOrder" value="{{cakes.placedOrder}}"
+                 id="placeOrder" name="placeOrder">
+                 <input type="hidden" #cakeQuantity [(ngModel)]="cakeToUpdate.cakeQuantity" value="{{cakes.cakeQuantity}}"
+                  id="cakeQuantity" name="cakeQuantity">
+                  <input type="hidden" #cakeMainIngredient [(ngModel)]="cakeToUpdate.cakeMainIngredient" value="{{cakes.cakeMainIngredient}}"
+                   id="cakeMainIngredient" name="cakeMainIngredient">
+                   <input type="hidden" #candle [(ngModel)]="cakeToUpdate.candle" value="{{cakes.candle}}" id="candle" name="candle">
+            </form>
+        </div>
+    </div>
+</div>

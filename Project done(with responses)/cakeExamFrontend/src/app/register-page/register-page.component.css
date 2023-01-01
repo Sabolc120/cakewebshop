@@ -1,0 +1,22 @@
+.registerPage{
+    margin-top:2%;
+    margin-bottom:33%;
+}
+.lab{
+    margin-bottom:1%;
+    margin-top:1%;
+    font-family: 'Montserrat', sans-serif;
+}
+.reg{
+    margin-top:2%;
+    background-color: #FDEEDC;
+    color: #E38B29;
+}
+.reg:hover{
+    background-color:#F1A661;
+}
+.mainTitle{
+    font-size:2rem;
+    color: #E38B29;
+    font-family: 'Combo', cursive;
+}

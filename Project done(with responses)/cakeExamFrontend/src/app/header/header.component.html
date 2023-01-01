@@ -1,0 +1,34 @@
+
+<section id="navBar">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">VizsgaSüti</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="mainPage">Főoldal</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Műveletek
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li *ngIf="!isLoggedIn()"><h5>Üdv látogató!</h5></li> <!--Csak akkor ha be van jelentkezve-->
+                      <li *ngIf="isLoggedIn()"><h5>Üdv vásárló!</h5></li> <!--Csak akkor ha be van jelentkezve-->
+                      <li  *ngIf="isLoggedIn()"><button type="button" class="btn" (click)="logout()">Kijelentkezés</button></li> <!--Csak akkor ha be van jelentkezve-->
+                      <li><hr class="dropdown-divider"></li>
+                      <li  *ngIf="!isLoggedIn()"><a class="dropdown-item" routerLink="loginPage">Bejelentkezés</a></li>
+                      <li  *ngIf="!isLoggedIn()"><a class="dropdown-item" routerLink="registerPage">Regisztráció</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a class="nav-link" routerLink="myBasket" *ngIf="isLoggedIn()">Kosaram</a> <!--Csak akkor ha be van jelentkezve-->
+            </div>
+          </nav>
+    </div>
+</section>

@@ -1,0 +1,54 @@
+.myimg{
+    float:left;
+    margin-top:3%;
+    height:70%;
+    border-radius: 10%;
+}
+.cakeTitle{
+    margin-top:5%;
+    font-family: 'Combo', cursive;
+    font-size:3rem;
+    color:#E38B29;
+}
+.cakeMain{
+    margin-top:3%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:2rem;
+    color:#E38B29;
+}
+.price{
+    margin-top:24%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+    font-style: italic;
+    color:#E38B29;
+}
+h4{
+    font-size:1.2rem;
+    margin-left:2%;
+    font-family: 'Combo', cursive;
+    color:#E38B29;
+}
+.myNumeric{
+    margin-left:3%;
+}
+.myLabel{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+    color:#E38B29;
+}
+.cakePage{
+    text-align:center;
+    font-family: 'Combo', cursive;
+    font-size:4rem;
+    margin-top:1%;
+    color:#E38B29;
+}
+.basket{
+    margin-top:2%;
+    background-color: #FDEEDC;
+    color: #E38B29;
+}
+.basket:hover{
+    background-color:#F1A661;
+}

@@ -1,0 +1,51 @@
+<h1 class="mainTitle">Beérkező rendelések</h1>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Rendelés azonosító</th>
+        <th scope="col">Ügyfél email címe</th>
+        <th scope="col">Ügyfél telefonszáma</th>
+        <th scope="col">Város</th>
+        <th scope="col">Szállítási cím</th>
+        <th scope="col">Keresztnév</th>
+        <th scope="col">Vezetéknév</th>
+        <th scope="col">Műveletek</th>
+        <th scope="col">Kosár tartalma</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cakes of orderDetails">
+        <th scope="row">{{cakes.id}}</th>
+        <td>{{cakes.customerEmail}}</td>
+        <td>{{cakes.customerPhoneNumber}}</td>
+        <td>{{cakes.city}}</td>
+        <td>{{cakes.address}}</td>
+        <td>{{cakes.firstName}}</td>
+        <td>{{cakes.lastName}}</td>
+        <td><button type="button" class="btn btn-warning" (click)="deleteOrder(cakes.id)">Törlés</button></td>
+        <td><button type="button" class="btn btn-success" (click)="nav(cakes.userName)">Kosár</button></td>
+      </tr>
+    </tbody>
+</table>
+<h1 class="mainTitle">Rendelés részletei</h1>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Torta neve</th>
+        <th scope="col">Torta ára</th>
+        <th scope="col">Torta mennyisége</th>
+        <th scope="col">Számos gyertyák</th>
+        <th scope="col">Megrendelt</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cakes of orderedStuff">
+        <th scope="row">{{cakes.cakeName}}</th>
+        <td>{{cakes.cakePrice}}</td>
+        <td>{{cakes.cakeQuantity}}</td>
+        <td>{{cakes.candle}}</td>
+        <td *ngIf="cakes.placedOrder === false">Kizárólag kosár elem</td>
+        <td *ngIf="cakes.placedOrder === true">Bejövő rendelés</td>
+      </tr>
+    </tbody>
+</table>

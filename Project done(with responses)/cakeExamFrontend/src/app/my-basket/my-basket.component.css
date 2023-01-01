@@ -1,0 +1,65 @@
+.col-sm-8{
+    margin-left:15%;
+    margin-top:2%;
+    margin-bottom:2%;
+    background-color: #FDEEDC;
+}
+.col-sm-8:hover{
+    background-color: #FFD8A9;
+}
+.myForm{
+    margin-top:10%;
+    margin-bottom:3%;
+}
+.btn{
+    margin-bottom:3%;
+    margin-top:3%;
+}
+.basketImg{
+    float:left;
+    width:20%;
+    height:20%;
+    margin-right:4%;
+    margin-left:1%;
+}
+.basketCakeName{
+    font-size:1.3rem;
+    color: #E38B29;
+    font-family: 'Combo', cursive;
+    margin-top:1%;
+    margin-left:2%;
+}
+.mainIngredients{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+}
+.cakePrice{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+.cakeQuantity{
+    font-family: 'Montserrat', sans-serif;
+    margin-left:1%;
+    margin-bottom:1%;
+}
+.finalPrice{
+    font-family: 'Montserrat', sans-serif;
+    text-align:right;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+.nextButton{
+    float:right;
+}
+.deleteButton{
+    font-family:'Montserrat', sans-serif;
+    margin-left:80%;
+}
+.rq{
+    color:red;
+    font-size:1rem;
+    font-family:'Montserrat', sans-serif;
+}
+.lab{
+    margin-right:3%;
+}
