@@ -1,38 +1,64 @@
-.container{
-    margin-top:5%;
-}
-h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size:2rem;
-    text-align:center;
+
+#bg{
+    background-image: url("https://cdn.discordapp.com/attachments/1035540982101446679/1059378635863228486/Hatter.png");
+    background-color: rgba(0,0,0,0.25);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h2{
-    margin-top:1%;
+    padding-top:2%;
     font-family: 'Montserrat', sans-serif;
-    font-size:1rem;
+    font-size:1.2rem;
     text-align:left;
 }
 p{
     text-align:right;
     font-family: 'Montserrat', sans-serif;
-    font-size:1rem;
     font-style:italic;
 }
 .boxing{
-    border: 1px solid grey;
+    border-radius: 10%;
+    border: 1px solid #FFFBE9;
     padding:10px;
     margin-bottom:15%;
+    color:#FFFBE9;
+    font-size: 1.2rem;
 }
 .boxing:hover{
-    background-color:#FDEEDC;
+    color:white;
+    font-weight: 1500;
+    font-weight: bold;
 }
 a{
     text-decoration: none;
     color:inherit;
 }
 h1{
+    padding-top:2%;
     margin-bottom:2%;
     font-family: 'Combo', cursive;
     font-size:2.7rem;
-    color:#E38B29;
+    text-align: center;
 }
+.cakeImg{
+    width:90%;
+}
+.mainTitle{
+    color:#FFFBE9;
+}
+@media only screen and (max-width: 600px) {
+    #bg{
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-attachment: fixed;
+        background-color: #fff;
+        -webkit-background-size: calc(100vw) calc(100vh);
+        -moz-background-size: calc(100vw) calc(100vh);
+        -o-background-size: calc(100vw) calc(100vh);
+        background-size: calc(100vw) calc(100vh);
+    }
+    .mainTitle{
+        padding-top:4%;
+        padding-bottom:4%;
+    }
+  }

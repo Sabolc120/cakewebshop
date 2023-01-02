@@ -1,11 +1,25 @@
+#bg{
+    background-image: url("https://cdn.discordapp.com/attachments/1035540982101446679/1059429774629539990/00022-918869837-empty_wooden_b___.png");
+    background-color: rgba(0,0,0,0.25);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top:3%;
+    color:#FFFBE9;
+    overflow-y: hidden; 
+}
 .col-sm-8{
     margin-left:15%;
     margin-top:2%;
     margin-bottom:2%;
-    background-color: #FDEEDC;
+    background: rgba(255,251,233,0.1);
+    transition: 0.3s;
 }
 .col-sm-8:hover{
-    background-color: #FFD8A9;
+    transition: 0.3s;
+    background: rgba(227,202,165,0.4);
 }
 .myForm{
     margin-top:10%;
@@ -17,30 +31,44 @@
 }
 .basketImg{
     float:left;
-    width:20%;
-    height:20%;
+    width:25%;
+    height:25%;
     margin-right:4%;
     margin-left:1%;
 }
 .basketCakeName{
-    font-size:1.3rem;
-    color: #E38B29;
-    font-family: 'Combo', cursive;
-    margin-top:1%;
-    margin-left:2%;
+    font-size:2rem;
+    color: #FFFBE9;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:2%;
+    margin-left:5%;
+    font-weight: bold;
 }
 .mainIngredients{
+    color: #FFFBE9;
+    margin-top:9%;
     font-family: 'Montserrat', sans-serif;
-    font-size:1rem;
+    font-size:1.1rem;
 }
 .cakePrice{
+    font-size: 1.1rem;
+    margin-top:1%;
+    margin-bottom:6%;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
 }
-.cakeQuantity{
+#cakeQuantity{
     font-family: 'Montserrat', sans-serif;
     margin-left:1%;
     margin-bottom:1%;
+    background-color: #CEAB93;
+    color:#FFFBE9 ;
+    border: 1px solid #CEAB93;
+    transition: 0.3s;
+}
+#cakeQuantity:hover{
+    transition: 0.3s;
+    background-color: #AD8B73;
 }
 .finalPrice{
     font-family: 'Montserrat', sans-serif;
@@ -50,16 +78,110 @@
 }
 .nextButton{
     float:right;
+    transition: 0.3s;
+    color: #FFFBE9;
+    background-color: #CEAB93;
+    font-family:'Montserrat', sans-serif;
+}
+.nextButton:hover{
+    transition: 0.3s;
+    background-color: #AD8B73;
 }
 .deleteButton{
+    transition: 0.3s;
+    color: #FFFBE9;
+    background-color: #CEAB93;
     font-family:'Montserrat', sans-serif;
     margin-left:80%;
 }
+.deleteButton:hover{
+    transition: 0.3s;
+    background-color: #AD8B73;
+}
+.dataSave{
+    transition: 0.3s;
+    color: #FFFBE9;
+    background-color: #CEAB93;
+    font-family:'Montserrat', sans-serif;
+}
+.dataSave:hover{
+    transition: 0.3s;
+    background-color: #AD8B73;
+}
 .rq{
     color:red;
-    font-size:1rem;
+    font-size:1.1rem;
     font-family:'Montserrat', sans-serif;
+    font-weight: bold;
 }
 .lab{
     margin-right:3%;
+    font-size: 1.1rem;
 }
+.formLab{
+    font-size: 1.1rem;
+    margin-top:1%;
+    margin-bottom:1%;
+    color:#FFFBE9;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+*:focus {
+    outline: #FFFBE9;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #CEAB93;
+    color: #FFFBE9;
+}
+input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #CEAB93;
+    color: #FFFBE9;
+}
+input[type=email], select{
+    border: 1px solid #FFFBE9;
+}
+input[type=text], select{
+    border: 1px solid #FFFBE9;
+}
+@media only screen and (max-width: 600px) {
+    #bg{
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-attachment: fixed;
+        background-color: #fff;
+        -webkit-background-size: calc(100vw) calc(100vh);
+        -moz-background-size: calc(100vw) calc(100vh);
+        -o-background-size: calc(100vw) calc(100vh);
+        background-size: calc(100vw) calc(100vh);
+    }
+    .col-sm-8{
+        margin-left:-1%;
+    }
+    .dataSave{
+        margin-top:15%;
+        margin-left:15%;
+        margin-bottom:10%;
+    }
+    .nextButton{
+        margin-top:10%;
+        margin-right:40%;
+        margin-bottom:5%;
+    }
+  }

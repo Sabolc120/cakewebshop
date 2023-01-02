@@ -1,16 +1,17 @@
 
-<div class="container">
+<section id="bg">
+  <div class="container">
     <div *ngFor="let cakes of cakeBasketDetails;let index = index;trackBy:trackByIndex;" class="col-sm-8">
         <section id="myBasket">
             <p class="basketCakeName">{{cakes.cakeName}}</p>
-            <img  class="basketImg img-thumbnail" src="{{cakes.cakeImg}}">
+            <img  class="basketImg" src="{{cakes.cakeImg}}">
             <p class="mainIngredients">Torta Fő hozzávalója: {{cakes.cakeMainIngredient}}</p>
             <p class="cakePrice">{{cakes.cakePrice}} Forint</p>
             <label for="cakeQuantity" class="lab">Mennyiség</label>
             <input type="number" #cakeQuantity
             [(ngModel)]="cakes.cakeQuantity" (change)="setQuantity(cakes, $event)"
             name="cakeQuantity" id="cakeQuantity" min="1">
-            <button type="submit" class="btn btn-warning deleteButton" (click)="deleteCake(cakes.id)">Törlés</button>
+            <button type="submit" class="btn deleteButton" (click)="deleteCake(cakes.id)">Törlés</button>
         </section>
         <input type="hidden" #cakeName ngModel="{{cakes.cakeName}}" value="{{cakeToUpdate.cakeName}}" id="cakeName" name="cakeName">
           <input type="hidden" #id [(ngModel)]="cakeToUpdate.identifier" value="{{cakeId}}" id="id" name="id">
@@ -27,36 +28,36 @@
     <form #orderForm="ngForm" name="form1" id="form1" (ngSubmit)="sendOrder(orderForm)">
         <div class="row">
           <div class="col">
-            <label for="firstName">Keresztneve</label>
+            <label for="firstName" class="formLab">Keresztneve</label>
             <ul class="rq">*Kötelező kitölteni</ul>
             <input type="text"  class="form-control"  ngModel id="firstName" name="firstName" placeholder="Keresztnév">
           </div>
           <div class="col">
-            <label for="lastName">Vezetékneve</label>
+            <label for="lastName" class="formLab">Vezetékneve</label>
             <ul class="rq">*Kötelező kitölteni</ul>
             <input type="text"  class="form-control"  ngModel id="lastName" name="lastName"  placeholder="Vezetéknév">
           </div>
         </div>
           <div class="row">
             <div class="col">
-                <label for="customerPhoneNumber">Telefonszám</label>
+                <label for="customerPhoneNumber" class="formLab">Telefonszám</label>
                 <ul class="rq">*Kötelező kitölteni</ul>
                 <input type="text"  class="form-control"  ngModel id="customerPhoneNumber" name="customerPhoneNumber" placeholder="Telefonszám">
               </div>
               <div class="col">
-                <label for="customerEmail">Email cím</label>
+                <label for="customerEmail" class="formLab">Email cím</label>
                 <ul class="rq">*Kötelező kitölteni</ul>
                 <input type="email" class="form-control"  ngModel id="customerEmail" name="customerEmail" placeholder="Email">
               </div>
           </div>
           <div class="row">
             <div class="col">
-                <label for="city">Városa(Csak Szegeden belül szállítunk)</label>
+                <label for="city" class="formLab">Városa(Csak Szegeden belül szállítunk)</label>
                 <ul class="rq">*Kötelező kitölteni</ul>
                 <input type="text" class="form-control" placeholder="Szeged" ngModel id="city" name="city" readonly="true">
             </div>
             <div class="col">
-                <label for="address">Címe</label>
+                <label for="address" class="formLab">Címe(Utca, Házszám, Emelet, Ajto)</label>
                 <ul class="rq">*Kötelező kitölteni</ul>
                 <input type="text" class="form-control"   ngModel id="address" name="address" placeholder="Cím" value="Példa: Diófa 22 5.em/12">
                 <input type="hidden" ngModel="{{userName}}" value="{{userName}}" name="userName" id="userName">
@@ -70,9 +71,10 @@
           </div>
           <div class="row">
             <div class="col-sm-9">
-                <input id="mybutton"  type="submit" class="btn btn-success" value="Rendelési adatok megadása.">
+                <input id="mybutton"  type="submit" class="btn dataSave" value="Rendelési adatok megadása.">
             </div>
           </div>
-          <button type="button" class="btn btn-success nextButton" *ngIf="savedForm" (click)="next()">Tovább</button>
+          <button type="button" class="btn nextButton" *ngIf="savedForm" (click)="next()">Tovább</button>
     </form>
 </div>
+</section>

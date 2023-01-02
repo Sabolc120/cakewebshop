@@ -1,24 +1,14 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container-fluid">
+<section id="bg">
+    <div class="container">
         <h1 class="cakePage">Torta lap</h1>
         <div class="row">
             <div class="col-sm-6">
                 <h4>A kép kizárólag illusztráció</h4>
-                <img src="{{cakeDetails.imageUrl}}" class="img-thumbnail myimg">
+                <img src="{{cakeDetails.imageUrl}}" class="myimg">
             </div>
             <div class="col-sm-6">
                 <p class="cakeTitle">{{cakeDetails.cakeName}}</p>
                 <p class="cakeMain">Fő hozzávaló: {{cakeDetails.mainIngredient}}</p>
-                <p class="price">Torta ára: {{cakeDetails.price}}ft</p>
                 <form #cakeForm="ngForm" (ngSubmit)="cakeBasket(cakeForm)">
                     <p class="details">
                         <label for="age" class="myLabel">Ajándékozott kora: </label> 
@@ -33,8 +23,8 @@
                     <input type="hidden" ngModel="{{userName}}" value= "{{userName}}" id="userName" name="userName">
                     <input type="submit" id = "mybutton" class="btn basket" value="Kosárba">
                 </form>
+                <p class="price">Torta ára: {{cakeDetails.price}}ft</p>
             </div>
         </div>
     </div>
-</body>
-</html>
+</section>

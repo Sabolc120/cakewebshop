@@ -17,6 +17,7 @@ const routes: Routes = [
   {path:"getOrders", component:HandleOrdersComponent},
   {path:"checkOut", component:OrderCheckOutComponent},
   {path:"setStatus",component:OrderCheckOutComponent},
+  {path: "", component:MainPageComponent}
 ];
 
 @NgModule({
