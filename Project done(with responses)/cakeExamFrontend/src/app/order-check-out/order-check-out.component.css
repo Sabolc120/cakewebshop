@@ -1,30 +1,42 @@
+#bg{
+    background-image: url("https://cdn.discordapp.com/attachments/1035540982101446679/1059743674755461150/Hatter.png");
+    background-color: rgba(0,0,0,0.25);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom:20%;
+    padding-top:3%;
+    color:#FFFBE9;
+}
 .basketImg{
     float:left;
-    width:30%;
-    height:30%;
+    width:26%;
+    height:26%;
     margin-right:10%;
     margin-left:1%;
 }
 .basketCakeName{
-    font-size:2rem;
-    color: #E38B29;
+    margin-top:8%;
+    font-size:2.1rem;
+    color: #E3CAA5;
     font-family: 'Combo', cursive;
-    margin-top:7%;
-    margin-left:2%;
+    margin-left:4%;
 }
 .mainIngredients{
+    font-family: 'Combo', cursive;
     font-size:2rem;
-    font-family: 'Montserrat', sans-serif;
 }
 .cakePrice{
+    font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
 }
 .cakeQuantity{
-    font-size:2rem;
+    font-size:1.5rem;
     font-family: 'Montserrat', sans-serif;
     margin-left:1%;
     margin-bottom:1%;
+    font-weight: bold;
+    margin-bottom:14%;
 }
 h1{
    text-align: center; 
@@ -34,9 +46,45 @@ h1{
 }
 h3{
     text-align: center;
-    margin-bottom:2%;
+    margin-bottom:10%;
     font-family:'Montserrat', sans-serif;
 }
 .col-sm-12{
-    margin-left:15%;
+    background: rgba(255,251,233,0.1);
+    transition: 0.3s;
 }
+.col-sm-12:hover{
+    transition: 0.3s;
+    background: rgba(227,202,165,0.4);
+}
+@media only screen and (max-width: 600px) {
+    #bg{
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-attachment: fixed;
+        background-color: #fff;
+        -webkit-background-size: calc(100vw) calc(100vh);
+        -moz-background-size: calc(100vw) calc(100vh);
+        -o-background-size: calc(100vw) calc(100vh);
+        background-size: calc(100vw) calc(100vh);
+    }
+    .mainTitle{
+        padding-top:4%;
+        padding-bottom:4%;
+    }
+    .basketCakeName{
+        font-size:1.5rem;
+        margin-left:1%;
+    }
+    .mainIngredients{
+        font-family: 'Combo', cursive;
+        font-size:1.5rem;
+    }
+    h1{
+        margin-bottom:10%;
+     }
+     .cakeQuantity{
+        font-size:1.1rem;
+        margin-bottom:10%;
+    }
+  }

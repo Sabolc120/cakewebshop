@@ -1,6 +1,15 @@
+#bg{
+    background-image: url("https://cdn.discordapp.com/attachments/1035540982101446679/1059751377674436668/administrationg.png");
+    background-color: rgba(0,0,0,0.25);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:1%;
+    padding-bottom:10%;
+    color: #AD8B73;
+}
 .mainTitle{
     text-align:center;
-    color: #E38B29;
+    color: #FFFBE9;
     font-family: 'Combo', cursive;
     margin-top:3%;
     margin-bottom:2%;
@@ -8,5 +17,45 @@
 .table{
     margin-top:5%;
     margin-bottom:5%;
-    border-style: 1px solid black;
+    border-style: 1px solid #E3CAA5;
+}
+th, tr, td{
+    color: #AD8B73;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.delBtn{
+    color: #FFFBE9;
+    background-color: #CEAB93;
+}
+.delBtn:hover{
+    background-color: #AD8B73;
+}
+.checkBasketBtn{
+    background-color: #CEAB93;
+    color: #FFFBE9;
+}
+.checkBasketBtn:hover{
+    background-color: #AD8B73;
+}
+@media only screen and (max-width: 600px) {
+    #bg{
+        background-position: 0px 0px;
+        background-attachment: fixed;
+        background-color: #fff;
+        -webkit-background-size: calc(100vw) calc(100vh);
+        -moz-background-size: calc(100vw) calc(100vh);
+        -o-background-size: calc(100vw) calc(100vh);
+        background-size: calc(100vw) calc(100vh);
+        padding-bottom:30%;
+        height:100vh;
+    }
+    tr, th, td{
+        color: #AD8B73;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    .mainTitle{
+        font-size: 1.5rem;
+    }
 }
