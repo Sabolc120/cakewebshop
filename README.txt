@@ -24,7 +24,7 @@ Frontend elindítása-
 xampp elindítása: Apacha - Start, MySql - Start & Admin.
 
 Szoftver github linkje (Kész projekt)
-[Ide, ha meg lesz a dizájn is]
+https://github.com/Sabolc120/cakewebshop
 
 Szoftver licensz -
 Unclicensed
